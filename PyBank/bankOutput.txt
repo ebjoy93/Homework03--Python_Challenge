@@ -1,0 +1,5 @@
+Financial Analysis
+--------------------------------------
+Average Change: 446309.0465116279
+Greatest Increase in Profits: 999942
+Greatest Decrease in Losses: -1022534
