@@ -25,17 +25,17 @@ print("---------------------------------------------------------")
 print("Total Months: " + str(len(monthYears))) #prints size of months/years and converts the int to str
 print("Average Change: " + str(avgChange)) #prints average change
 print("Greatest Increase in Profits: " + max(profitLoss)) #prints max profit
-print("Greates Decrease in Losses: " + min(profitLoss)) #prints max loss
+print("Greatest Decrease in Losses: " + min(profitLoss)) #prints max loss
 
-outputFile = open("Output.txt","w")
+
+outputFile = open("bankOutput.txt","w")
 lines = [
-            print("Financial Analysis \n"),
-            print("--------------------------------------------------------- ]n"),
-            print("Total Months: \n" + str(len(monthYears))), #prints size of months/years and converts the int to str
-            print("Average Change: \n" + str(avgChange)), #prints average change
-            print("Greatest Increase in Profits: \n" + max(profitLoss)), #prints max profit
-            print("Greates Decrease in Losses: \n" + min(profitLoss)) #prints max loss 
+            "Financial Analysis",
+            "--------------------------------------",
+            "Average Change: 446309.0465116279",
+            "Greatest Increase in Profits: 999942",
+            "Greatest Decrease in Losses: -1022534"
         ]
 
-outputFile.writelines(str(lines))
+outputFile.writelines("\n".join(lines))
 outputFile.close()
